@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart' show CupertinoButton;
 import 'package:flutter/material.dart';
 import 'package:github_test/src/data/models/github_repository.dart';
 import 'package:github_test/src/ui/global_widgets/avatar.dart';
-import 'package:github_test/src/ui/pages/my_repositories/widgets/respository_info.dart';
+import 'package:github_test/src/ui/pages/my_repositories/widgets/repository_info.dart';
 import 'package:github_test/src/utils/app_colors.dart';
 import 'package:github_test/src/utils/font_styles.dart';
 import 'package:github_test/src/utils/responsive.dart';

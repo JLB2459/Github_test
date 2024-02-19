@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:github_test/src/data/models/github_profile.dart';
 import 'package:github_test/src/ui/global_widgets/avatar.dart';
+import 'package:github_test/src/ui/pages/home/widgets/github_button.dart';
 import 'package:github_test/src/ui/pages/home/widgets/personal_info.dart';
 import 'package:github_test/src/ui/pages/home/widgets/profile_info.dart';
 import 'package:github_test/src/utils/font_styles.dart';
@@ -52,9 +53,18 @@ class ProfileCard extends StatelessWidget {
                       SizedBox(
                         height: responsive.dp(0.4),
                       ),
-                      Text(
-                        gitHubProfile.login,
-                        style: FontStyles.title2.copyWith(fontSize: 15),
+                      Row(
+                        children: [
+                          Flexible(
+                            child: Text(
+                              gitHubProfile.login,
+                              style: FontStyles.title2.copyWith(fontSize: 15),
+                            ),
+                          ),
+                          GitHubButton(
+                            url: gitHubProfile.htmlUrl,
+                          ),
+                        ],
                       ),
                       SizedBox(
                         height: responsive.dp(0.9),

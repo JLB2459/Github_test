@@ -41,8 +41,14 @@ class MyRepositoriesPage extends StatelessWidget {
                     repository: repository,
                     onPressed: () {
                       final repoName = repository.name;
+                      final url = repository.htmlUrl;
 
-                      Navigator.push(context, _createRoute(repoName));
+                      final data = {
+                        'repoName': repoName,
+                        'url': url,
+                      };
+
+                      Navigator.push(context, _createRoute(data));
                     },
                   );
                 },
@@ -66,7 +72,7 @@ class MyRepositoriesPage extends StatelessWidget {
   }
 }
 
-Route _createRoute(String repoName) {
+Route _createRoute(Map<String, String> repoName) {
   return PageRouteBuilder(
     pageBuilder: (context, animation, secondaryAnimation) =>
         const CommitsPage(),
