@@ -11,7 +11,7 @@ Asegúrate de tener instalados los siguientes elementos en tu sistema:
 
 ## Clonar el Repositorio
 
-git clone [[https://github.com/tuusuario/tuproyecto.git](https://github.com/JLB2459/Github_test.git)](https://github.com/JLB2459/Github_test.git)
+git clone https://github.com/tuusuario/tuproyecto.git
 
 luego navega al directorio del proyecto:
 
